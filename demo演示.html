@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>popupWindow</title>
+<link rel="stylesheet" href="../../css/reset.css" />
+<link rel="stylesheet" href="pz_popupWindow.css" />
+<script type="text/javascript" src="../../js/lib/jquery.js"></script>
+<script type="text/javascript" src="pz_popupWindow.js"></script>
+</head>
+<body style="padding:50px;height:3000px;">
+
+
+<!--<div class="J_PZPopupWindow">
+	<div class="J_PZPopupCaption">
+		<div class="J_PZPopupTitle">提示框</div>
+        <div class="J_PZPopupBtns">
+            <span class="close_btn" title="关闭窗口"></span>
+        	<span class="scale_btn" title="展开/收缩"></span>
+        </div>
+	</div>
+    <div class="J_PZPopupContent">
+    
+    </div>
+</div>-->
+
+
+
+
+<script type="text/javascript">
+
+	$(function(){
+		$("#BT1").click(function(){
+			new J_PZPopupWindow({
+							title:"来自品质365",          //对话框文本
+							loadHTML:"<a href='#'><img src='test.jpg' /></a>",//载入内容
+							height:370,							 //尺寸
+							width:222,
+							isCloseBtn:true,					//显示关闭和缩放按钮
+							isScaleBtn:true,
+							location:["left","top"],			//对话框的位置
+							isHide:false						//内容区域不隐藏
+
+							});
+		
+		
+		
+		});
+		$("#BT2").click(function(){
+			new J_PZPopupWindow({
+						title:"推荐产品",
+						loadHTML:"<a href='#'><img src='test.jpg' /></a>",
+						height:370,
+						width:150,
+						//isCloseBtn:true,
+						isScaleBtn:true,
+						location:["right","bottom"],
+						isHide:true
+	
+						});
+		});
+		$("#BT3").click(function(){
+			new J_PZPopupWindow({
+						title:"来自品质365的推荐产品",
+						loadHTML:"<a href='#'><img src='test.jpg' /></a>",
+						height:300,
+						width:500,
+						isCloseBtn:true,
+						isScaleBtn:false,
+						location:["right","center"],
+						isHide:false
+						});
+		});
+});
+
+</script>
+
+
+<button id="BT1">弹出左上角(内容区域显示)</button>
+<button id="BT2">弹出右下角角(内容区域不显示)</button>
+<button id="BT3">弹出居中(内容区域不显示，关闭按钮不显示)</button>
+
+</body>
+</html>

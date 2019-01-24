@@ -1,0 +1,55 @@
+.J_PZPopupWindow {
+  position: fixed;
+  _position: absolute;
+  display: none;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 12px;
+  background: #f6f6f6;
+  color: #595959;
+}
+.J_PZPopupWindow .J_PZPopupCaption {
+  height: 30px;
+  border: 1px solid #c6c6c6;
+  text-indent: 15px;
+  line-height: 30px;
+  background: #eee;
+  font-size: 14px;
+}
+.J_PZPopupWindow .J_PZPopupCaption .J_PZPopupTitle {
+  float: left;
+}
+.J_PZPopupWindow .J_PZPopupCaption .J_PZPopupBtns {
+  float: right;
+  height: 30px;
+  padding-right: 10px;
+}
+.J_PZPopupWindow .J_PZPopupCaption .J_PZPopupBtns span {
+  float: right;
+  cursor: pointer;
+  margin-top: 5px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  background: url(popup_icon.jpg) no-repeat left top;
+}
+.J_PZPopupWindow .J_PZPopupCaption .J_PZPopupBtns span.scale_btn {
+  background-position: left -40px;
+}
+.J_PZPopupWindow .J_PZPopupCaption .J_PZPopupBtns span.scaleTo {
+  background-position: left -60px;
+}
+.J_PZPopupWindow .J_PZPopupCaption .J_PZPopupBtns span.close_btn:hover {
+  background-position: left -20px;
+}
+.J_PZPopupWindow .J_PZPopupContent {
+  height: 200px;
+  border: 1px solid #c6c6c6;
+  border-top: 0;
+  overflow: hidden;
+}
